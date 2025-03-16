@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Categories - One-Minute Wins</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="asteroid-container">
@@ -34,16 +37,6 @@
   <footer>
     <p>© 2025 One-Minute Wins. All rights reserved.</p>
   </footer>
-  <script>
-    window.onload = function() {
-      const asteroids = document.querySelectorAll('.asteroid');
-      asteroids.forEach(asteroid => {
-        asteroid.style.animationPlayState = 'running';
-      });
-      setTimeout(() => {
-        document.querySelector('.asteroid-container').classList.add('fade-out');
-      }, 6000);
-    };
-  </script>
+  <script>onload=()=>{setTimeout(()=>{document.querySelector('.asteroid-container').classList.add('fade-out')},6e3)}</script>
 </body>
 </html>
