@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories - One-Minute Wins</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="asteroid-container">
+    <div class="asteroid"></div>
+    <div class="asteroid"></div>
+    <div class="asteroid"></div>
+    <div class="asteroid"></div>
+    <div class="asteroid"></div>
+  </div>
+  <header>
+    <h1>One-Minute Wins</h1>
+    <p>Quick reads on trending topics—in 60 seconds!</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="posts/bronny-james-heckler.html">Blog</a>
+      <a href="premium.html">Premium</a>
+      <a href="categories.html">Categories</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+  <main>
+    <section class="blog-preview">
+      <h2>Categories</h2>
+      <p>Explore our blog categories (coming soon!)</p>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 One-Minute Wins. All rights reserved.</p>
+  </footer>
+  <script>
+    window.onload = function() {
+      const asteroids = document.querySelectorAll('.asteroid');
+      asteroids.forEach(asteroid => {
+        asteroid.style.animationPlayState = 'running';
+      });
+      setTimeout(() => {
+        document.querySelector('.asteroid-container').classList.add('fade-out');
+      }, 6000);
+    };
+  </script>
+</body>
+</html>
