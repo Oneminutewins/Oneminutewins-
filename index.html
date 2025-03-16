@@ -7,12 +7,21 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="asteroid-container">
+    <div class="asteroid"></div>
+    <div class="asteroid"></div>
+    <div class="asteroid"></div>
+    <div class="asteroid"></div>
+    <div class="asteroid"></div>
+  </div>
   <header>
     <h1>One-Minute Wins</h1>
     <p>Quick reads on trending topics—in 60 seconds!</p>
     <nav>
       <a href="index.html">Home</a>
       <a href="posts/bronny-james-heckler.html">Blog</a>
+      <a href="premium.html">Premium</a>
+      <a href="categories.html">Categories</a>
       <a href="about.html">About</a>
     </nav>
   </header>
@@ -26,8 +35,18 @@
     </section>
   </main>
   <footer>
-    <p>&copy; 2025 One-Minute Wins. All rights reserved.</p>
-    <p><a href="about.html">About</a> | <a href="https://paypal.me/yourlink">Donate ₹50</a></p>
+    <p>© 2025 One-Minute Wins. All rights reserved.</p>
   </footer>
+  <script>
+    window.onload = function() {
+      const asteroids = document.querySelectorAll('.asteroid');
+      asteroids.forEach(asteroid => {
+        asteroid.style.animationPlayState = 'running';
+      });
+      setTimeout(() => {
+        document.querySelector('.asteroid-container').classList.add('fade-out');
+      }, 6000);
+    };
+  </script>
 </body>
 </html>
