@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premium - One-Minute Wins</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="asteroid-container">
+    <div class="asteroid"></div>
+    <div class="asteroid"></div>
+    <div class="asteroid"></div>
+    <div class="asteroid"></div>
+    <div class="asteroid"></div>
+  </div>
+  <header>
+    <h1>One-Minute Wins</h1>
+    <p>Quick reads on trending topics—in 60 seconds!</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="posts/bronny-james-heckler.html">Blog</a>
+      <a href="premium.html">Premium</a>
+      <a href="categories.html">Categories</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+  <main>
+    <section class="blog-preview">
+      <h2>Premium Plans</h2>
+      <div class="plans">
+        <div class="plan">
+          <h3>Basic</h3>
+          <p><strong>₹99/month</strong></p>
+          <ul>
+            <li>Access to exclusive posts</li>
+            <li>Ad-free experience</li>
+          </ul>
+        </div>
+        <div class="plan">
+          <h3>Pro</h3>
+          <p><strong>₹199/month</strong></p>
+          <ul>
+            <li>All Basic features</li>
+            <li>Early access to trends</li>
+            <li>Monthly Q&A with creator</li>
+          </ul>
+        </div>
+        <div class="plan">
+          <h3>Elite</h3>
+          <p><strong>₹299/month</strong></p>
+          <ul>
+            <li>All Pro features</li>
+            <li>Personalized trending tips</li>
+            <li>Priority support</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 One-Minute Wins. All rights reserved.</p>
+  </footer>
+  <script>
+    window.onload = function() {
+      const asteroids = document.querySelectorAll('.asteroid');
+      asteroids.forEach(asteroid => {
+        asteroid.style.animationPlayState = 'running';
+      });
+      setTimeout(() => {
+        document.querySelector('.asteroid-container').classList.add('fade-out');
+      }, 6000);
+    };
+  </script>
+</body>
+</html>
