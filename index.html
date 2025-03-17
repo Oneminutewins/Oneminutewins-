@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>One-Minute Wins</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="asteroid-container">
@@ -19,7 +22,7 @@
     <p>Quick reads on trending topics—in 60 seconds!</p>
     <nav>
       <a href="index.html">Home</a>
-      <a href="posts/bronny-james-heckler.html">Blog</a>
+      <a href="posts.html">Blog</a>
       <a href="premium.html">Premium</a>
       <a href="categories.html">Categories</a>
       <a href="about.html">About</a>
@@ -27,26 +30,34 @@
   </header>
   <main>
     <section class="blog-preview">
-      <h2>Latest Post</h2>
+      <h2>Latest Posts</h2>
       <article>
         <h3><a href="posts/bronny-james-heckler.html">Top Trending: Bronny James’ Viral Heckler Clapback</a></h3>
         <p>Bronny James shuts down a heckler with a savage one-liner during a Lakers game—read the viral moment!</p>
       </article>
+      <article>
+        <h3><a href="posts/most-useful-ais.html">Most Useful AIs for Coding, Productivity, and More</a></h3>
+        <p>Discover the top AI tools to boost your coding skills and productivity in 60 seconds!</p>
+      </article>
+      <article>
+        <h3><a href="posts/ai-agents-market.html">All Available AI Agents in the Market and Their Uses</a></h3>
+        <p>Explore the latest AI agents, their uses, and links to get started now!</p>
+      </article>
+      <article>
+        <h3><a href="posts/instant-games.html">Instant-Play Games on the Internet</a></h3>
+        <p>Check out fun games you can play right away with descriptions and links!</p>
+      </article>
     </section>
   </main>
   <footer>
+    <p>Sign up for updates:</p>
+    <p>Enter your name and email to stay updated with our latest posts and offers.</p>
+    <div id="newsletter-form">
+      <p>Loading...</p>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdeBDZlA2Y8eUNSwuD0_GYwe7-wDSdbOk35NDkVjzudK-TMBw/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
     <p>© 2025 One-Minute Wins. All rights reserved.</p>
   </footer>
-  <script>
-    window.onload = function() {
-      const asteroids = document.querySelectorAll('.asteroid');
-      asteroids.forEach(asteroid => {
-        asteroid.style.animationPlayState = 'running';
-      });
-      setTimeout(() => {
-        document.querySelector('.asteroid-container').classList.add('fade-out');
-      }, 6000);
-    };
-  </script>
+  <script>onload=()=>{setTimeout(()=>{document.querySelector('.asteroid-container').classList.add('fade-out')},6e3)}</script>
 </body>
 </html>
