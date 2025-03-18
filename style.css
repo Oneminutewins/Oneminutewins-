@@ -341,6 +341,17 @@ footer a:hover {
   text-align: center;
   margin-left: 5px;
   vertical-align: middle;
+  position: relative;
+}
+
+.verified-badge::before {
+  content: "✔";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  color: #fff;
 }
 
 .verified-badge.blue {
@@ -393,4 +404,4 @@ footer a:hover {
   .read-more-btn {
     padding: 8px 20px;
   }
-}
+  }
