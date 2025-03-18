@@ -333,7 +333,7 @@ footer a:hover {
   display: inline-block;
   width: 20px;
   height: 20px;
-  background: #ff9800; /* Orange badge for Sathvik */
+  background: #ff9800; /* Orange badge like Twitter/X */
   border-radius: 50%;
   color: #fff;
   font-size: 12px;
@@ -345,12 +345,12 @@ footer a:hover {
 }
 
 .verified-badge::before {
-  content: "✔";
+  content: "✓"; /* Simplified checkmark */
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 14px;
+  font-size: 12px; /* Adjusted size for better fit */
   color: #fff;
 }
 
@@ -404,4 +404,5 @@ footer a:hover {
   .read-more-btn {
     padding: 8px 20px;
   }
-  }
+}
+
