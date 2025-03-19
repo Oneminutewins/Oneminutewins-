@@ -19,9 +19,9 @@ body {
 header {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
-  padding: 40px 20px;
+  padding: 30px 15px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
   position: relative;
   z-index: 1;
@@ -31,7 +31,7 @@ header {
 h1 {
   color: #e0e0e0;
   font-family: 'Roboto Slab', serif;
-  font-size: 3.5em;
+  font-size: 2.8em;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -44,26 +44,30 @@ h1 {
 
 header p {
   color: #b0b0b0;
-  font-size: 1.2em;
-  margin: 15px 0;
+  font-size: 1.1em;
+  margin: 10px 0;
   font-family: 'Inter', sans-serif;
 }
 
 nav {
-  margin-top: 25px;
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
 
 nav a {
   color: #e0e0e0;
   text-decoration: none;
-  margin: 0 15px;
   font-weight: 500;
-  padding: 10px 20px;
+  padding: 8px 16px;
   border-radius: 25px;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5px);
   transition: all 0.3s ease;
   font-family: 'Inter', sans-serif;
+  font-size: 1em;
 }
 
 nav a:hover {
@@ -75,20 +79,20 @@ nav a:hover {
 main {
   max-width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 0 10px;
 }
 
 .blog-preview {
   background: none;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 h2 {
   color: #e0e0e0;
   font-family: 'Roboto Slab', serif;
-  font-size: 2em;
-  padding: 20px;
+  font-size: 1.8em;
+  padding: 15px;
   text-shadow: 0 0 10px rgba(212, 212, 216, 0.3);
 }
 
@@ -105,7 +109,7 @@ article {
 
 article img {
   width: 100%;
-  height: auto;
+  height: 200px;
   object-fit: cover;
   position: relative;
   z-index: 1;
@@ -122,7 +126,7 @@ article img {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  padding: 20px;
+  padding: 15px;
   text-align: center;
   transition: all 0.3s ease;
   z-index: 2;
@@ -137,7 +141,7 @@ article:hover .article-overlay {
   color: #e0e0e0;
   text-decoration: none;
   font-family: 'Roboto Slab', serif;
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 700;
   text-transform: uppercase;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
@@ -151,17 +155,17 @@ article:hover .article-overlay {
 
 .article-overlay p {
   color: #b0b0b0;
-  margin: 10px 0;
-  font-size: 1.1em;
-  max-width: 600px;
+  margin: 8px 0;
+  font-size: 0.9em;
+  max-width: 90%;
   font-family: 'Inter', sans-serif;
 }
 
 .read-more-btn {
   position: absolute;
-  bottom: 20px;
+  bottom: 15px;
   display: inline-block;
-  padding: 10px 25px;
+  padding: 8px 20px;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5px);
   color: #e0e0e0;
@@ -196,9 +200,9 @@ article.full-post img {
 }
 
 article.full-post .post-content {
-  padding: 20px;
+  padding: 15px;
   text-align: left;
-  max-width: 800px;
+  max-width: 100%;
   margin: 0 auto;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
@@ -209,11 +213,12 @@ article.full-post .post-content {
 article.full-post .post-content p {
   font-family: 'Inter', sans-serif;
   color: #e0e0e0;
+  font-size: 1em;
 }
 
 footer {
-  margin-top: 50px;
-  padding: 20px;
+  margin-top: 30px;
+  padding: 15px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   color: #b0b0b0;
   font-size: 0.9em;
@@ -240,6 +245,7 @@ footer a:hover {
   pointer-events: none;
   z-index: 0;
   overflow: hidden;
+  display: block !important;
 }
 
 .asteroid {
@@ -304,16 +310,18 @@ footer a:hover {
 .plans {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
   flex-wrap: wrap;
+  padding: 0 10px;
 }
 
 .plan {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
-  padding: 20px;
+  padding: 15px;
   border-radius: 20px;
-  width: 250px;
+  width: 100%;
+  max-width: 300px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
@@ -326,13 +334,13 @@ footer a:hover {
 .plan h3 {
   color: #e0e0e0;
   font-family: 'Roboto Slab', serif;
-  font-size: 1.6em;
+  font-size: 1.5em;
   margin-bottom: 10px;
 }
 
 .plan p strong {
   color: #d4d4d8;
-  font-size: 1.4em;
+  font-size: 1.3em;
 }
 
 .plan ul {
@@ -346,6 +354,7 @@ footer a:hover {
   margin: 5px 0;
   padding-left: 15px;
   position: relative;
+  font-size: 0.9em;
 }
 
 .plan li::before {
@@ -358,7 +367,7 @@ footer a:hover {
 .plan .buy-btn {
   display: inline-block;
   margin-top: 15px;
-  padding: 10px 25px;
+  padding: 8px 20px;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5px);
   color: #e0e0e0;
@@ -380,13 +389,13 @@ footer a:hover {
 
 .verified-badge {
   display: inline-block;
-  width: 20px;
-  height: 20px;
-  background: #ff9800;
+  width: 24px;
+  height: 24px;
+  background: #1DA1F2;
   border-radius: 50%;
   color: #fff;
-  font-size: 12px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 24px;
   text-align: center;
   margin-left: 5px;
   vertical-align: middle;
@@ -394,17 +403,13 @@ footer a:hover {
 }
 
 .verified-badge::before {
-  content: "✓";
+  content: "✔";
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 12px;
+  font-size: 16px;
   color: #fff;
-}
-
-.verified-badge.blue {
-  background: #2196f3;
 }
 
 .social-share {
@@ -428,6 +433,46 @@ footer a:hover {
   box-shadow: 0 0 10px rgba(212, 212, 216, 0.3);
 }
 
+@media (min-width: 768px) {
+  header {
+    padding: 40px 20px;
+  }
+  h1 {
+    font-size: 3.5em;
+  }
+  header p {
+    font-size: 1.2em;
+  }
+  nav a {
+    padding: 10px 20px;
+    font-size: 1.1em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  article img {
+    height: 300px;
+  }
+  .article-overlay h3 a {
+    font-size: 2em;
+  }
+  .article-overlay p {
+    font-size: 1.1em;
+  }
+  .read-more-btn {
+    padding: 10px 25px;
+  }
+  .plan {
+    width: 250px;
+  }
+  .plan li {
+    font-size: 1em;
+  }
+  article.full-post .post-content {
+    max-width: 800px;
+  }
+}
+
 @media (max-width: 600px) {
   h1 {
     font-size: 2.5em;
@@ -436,22 +481,23 @@ footer a:hover {
     font-size: 1.6em;
   }
   nav a {
-    margin: 10px;
-    padding: 8px 16px;
+    padding: 8px 14px;
+    font-size: 0.9em;
   }
   article img {
-    height: auto;
+    height: 180px;
   }
   .article-overlay {
-    padding: 15px;
+    padding: 10px;
   }
   .article-overlay h3 a {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
   .article-overlay p {
-    font-size: 1em;
+    font-size: 0.85em;
   }
   .read-more-btn {
-    padding: 8px 20px;
+    padding: 6px 18px;
+    font-size: 0.9em;
   }
   }
