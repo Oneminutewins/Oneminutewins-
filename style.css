@@ -1,4 +1,4 @@
-/* Reset default styles */
+  /* Reset default styles */
 * {
   margin: 0;
   padding: 0;
@@ -124,7 +124,7 @@ article img {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center; /* Center the content vertically */
   align-items: center;
   padding: 15px;
   text-align: center;
@@ -146,6 +146,7 @@ article:hover .article-overlay {
   text-transform: uppercase;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
   transition: all 0.3s ease;
+  margin-bottom: 20px; /* Add spacing between headline and button */
 }
 
 .article-overlay h3 a:hover {
@@ -153,17 +154,7 @@ article:hover .article-overlay {
   text-shadow: 0 0 15px rgba(212, 212, 216, 0.5);
 }
 
-.article-overlay p {
-  color: #b0b0b0;
-  margin: 8px 0;
-  font-size: 0.9em;
-  max-width: 90%;
-  font-family: 'Inter', sans-serif;
-}
-
 .read-more-btn {
-  position: absolute;
-  bottom: 15px;
   display: inline-block;
   padding: 8px 20px;
   background: rgba(255, 255, 255, 0.1);
@@ -456,9 +447,6 @@ footer a:hover {
   .article-overlay h3 a {
     font-size: 2em;
   }
-  .article-overlay p {
-    font-size: 1.1em;
-  }
   .read-more-btn {
     padding: 10px 25px;
   }
@@ -492,9 +480,6 @@ footer a:hover {
   }
   .article-overlay h3 a {
     font-size: 1.3em;
-  }
-  .article-overlay p {
-    font-size: 0.85em;
   }
   .read-more-btn {
     padding: 6px 18px;
