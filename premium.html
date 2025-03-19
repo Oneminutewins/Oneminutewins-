@@ -7,18 +7,11 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="asteroid-container">
-    <div class="asteroid"></div>
-    <div class="asteroid"></div>
-    <div class="asteroid"></div>
-    <div class="asteroid"></div>
-    <div class="asteroid"></div>
-  </div>
   <header>
-    <h1>One-Minute Wins</h1>
+    <h1>𝐎𝐍𝐄𝐌𝐈𝐌𝐔𝐓𝐄𝐖𝐈𝐍𝐒</h1>
     <p>Quick reads on trending topics—in 60 seconds!</p>
     <nav>
       <a href="index.html">Home</a>
@@ -26,44 +19,46 @@
       <a href="premium.html">Premium</a>
       <a href="categories.html">Categories</a>
       <a href="about.html">About</a>
+      <a href="on-demand.html">On Demand</a>
     </nav>
   </header>
   <main>
-    <section class="blog-preview">
-      <h2>Premium Plans</h2>
-      <div class="plans">
-        <div class="plan">
-          <h3>Basic</h3>
-          <p><strong>₹99/month</strong></p>
-          <ul>
-            <li>Access to exclusive posts</li>
-            <li>Ad-free experience</li>
-          </ul>
-        </div>
-        <div class="plan">
-          <h3>Pro</h3>
-          <p><strong>₹199/month</strong></p>
-          <ul>
-            <li>All Basic features</li>
-            <li>Early access to trends</li>
-            <li>Monthly Q&A with creator</li>
-          </ul>
-        </div>
-        <div class="plan">
-          <h3>Elite</h3>
-          <p><strong>₹299/month</strong></p>
-          <ul>
-            <li>All Pro features</li>
-            <li>Personalized trending tips</li>
-            <li>Priority support</li>
-          </ul>
-        </div>
+    <section class="plans">
+      <h2>Premium Plans (Soon Available)</h2>
+      <div class="plan">
+        <h3>Basic</h3>
+        <p><strong>USD 2.99</strong>/month</p>
+        <ul>
+          <li>Ad-free experience</li>
+          <li>Access to exclusive posts</li>
+          <li>Weekly newsletter</li>
+        </ul>
+        <a href="#" class="buy-btn">Buy</a>
+      </div>
+      <div class="plan">
+        <h3>Pro</h3>
+        <p><strong>USD 5.99</strong>/month</p>
+        <ul>
+          <li>Everything in Basic</li>
+          <li>Early access to new posts</li>
+          <li>Priority support</li>
+        </ul>
+        <a href="#" class="buy-btn">Buy</a>
+      </div>
+      <div class="plan">
+        <h3>Elite</h3>
+        <p><strong>USD 9.99</strong>/month</p>
+        <ul>
+          <li>Everything in Pro</li>
+          <li>Monthly Q&A with the team</li>
+          <li>Custom content requests</li>
+        </ul>
+        <a href="#" class="buy-btn">Buy</a>
       </div>
     </section>
   </main>
   <footer>
     <p>© 2025 One-Minute Wins. All rights reserved.</p>
   </footer>
-  <script>onload=()=>{setTimeout(()=>{document.querySelector('.asteroid-container').classList.add('fade-out')},6e3)}</script>
 </body>
 </html>
