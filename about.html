@@ -10,6 +10,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="asteroid-container">
+    <div class="asteroid"></div>
+    <div class="asteroid"></div>
+    <div class="asteroid"></div>
+    <div class="asteroid"></div>
+    <div class="asteroid"></div>
+  </div>
   <header>
     <h1>𝐎𝐍𝐄𝐌𝐈𝐌𝐔𝐓𝐄𝐖𝐈𝐍𝐒</h1>
     <p>Quick reads on trending topics—in 60 seconds!</p>
@@ -28,7 +35,7 @@
       <article class="full-post">
         <div class="post-content">
           <p>Welcome to <strong>One-Minute Wins</strong>, your go-to source for quick, engaging reads on the latest trends in tech, space, sports, and more! Our mission is to deliver bite-sized, informative content that fits into your busy life—all in under 60 seconds.</p>
-          <p>Founded by <span class="verified-badge">Sathvik</span>, a passionate content creator with a love for innovation and storytelling, One-Minute Wins aims to make complex topics accessible and exciting. With a team of dedicated writers and researchers, we scour the web to bring you the most up-to-date and fascinating stories.</p>
+          <p>Founded by <span style="font-size: 1.5em; color: #d4d4d8;">Sathvik</span><span class="verified-badge"></span>, a passionate content creator with a love for innovation and storytelling, One-Minute Wins aims to make complex topics accessible and exciting. With a team of dedicated writers and researchers, we scour the web to bring you the most up-to-date and fascinating stories.</p>
           <p>Whether you’re a tech enthusiast, a space explorer at heart, or a sports fan, we’ve got something for everyone. Stay tuned for more updates, and feel free to reach out with your feedback or ideas!</p>
         </div>
       </article>
@@ -37,5 +44,6 @@
   <footer>
     <p>© 2025 One-Minute Wins. All rights reserved.</p>
   </footer>
+  <script>onload=()=>{setTimeout(()=>{document.querySelector('.asteroid-container').classList.add('fade-out')},6e3)}</script>
 </body>
 </html>
