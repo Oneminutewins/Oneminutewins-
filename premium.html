@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +21,7 @@
   <header>
     <h1>𝐎𝐍𝐄𝐌𝐈𝐌𝐔𝐓𝐄𝐖𝐈𝐍𝐒</h1>
     <p>Quick reads on trending topics—in 60 seconds!</p>
-    <nav class="main-nav">
+    <nav>
       <a href="index.html">Home</a>
       <a href="posts.html">Blog</a>
       <a href="premium.html">Premium</a>
@@ -28,45 +29,39 @@
       <a href="about.html">About</a>
       <a href="on-demand.html">On Demand</a>
     </nav>
-    <div class="menu-icon">☰</div>
-    <div class="menu-bar">
-      <a href="index.html">Home</a>
-      <a href="posts.html">Blog</a>
-      <a href="premium.html">Premium</a>
-      <a href="categories.html">Categories</a>
-      <a href="about.html">About</a>
-      <a href="on-demand.html">On Demand</a>
-    </div>
   </header>
   <main>
-    <section class="premium">
+    <section class="plans">
       <h2>Premium Plans (Soon Available)</h2>
       <div class="plan">
-        <h3>Basic Plan</h3>
-        <p>$2.99/month</p>
+        <h3>Basic</h3>
+        <p><strong>USD 2.99</strong>/month</p>
         <ul>
           <li>Ad-free experience</li>
           <li>Access to exclusive posts</li>
+          <li>Weekly newsletter</li>
         </ul>
+        <a href="#" class="buy-btn">Buy</a>
       </div>
       <div class="plan">
-        <h3>Pro Plan</h3>
-        <p>$5.99/month</p>
+        <h3>Pro</h3>
+        <p><strong>USD 5.99</strong>/month</p>
         <ul>
-          <li>Ad-free experience</li>
-          <li>Access to exclusive posts</li>
-          <li>Priority on-demand blog requests</li>
+          <li>Everything in Basic</li>
+          <li>Early access to new posts</li>
+          <li>Priority support</li>
         </ul>
+        <a href="#" class="buy-btn">Buy</a>
       </div>
       <div class="plan">
-        <h3>Elite Plan</h3>
-        <p>$9.99/month</p>
+        <h3>Elite</h3>
+        <p><strong>USD 9.99</strong>/month</p>
         <ul>
-          <li>Ad-free experience</li>
-          <li>Access to exclusive posts</li>
-          <li>Priority on-demand blog requests</li>
+          <li>Everything in Pro</li>
+          <li>Monthly Q&A with the team</li>
           <li>Custom content requests</li>
         </ul>
+        <a href="#" class="buy-btn">Buy</a>
       </div>
     </section>
   </main>
@@ -74,10 +69,5 @@
     <p>© 2025 One-Minute Wins. All rights reserved.</p>
   </footer>
   <script>onload=()=>{setTimeout(()=>{document.querySelector('.asteroid-container').classList.add('fade-out')},6e3)}</script>
-  <script>
-    document.querySelector('.menu-icon').addEventListener('click', () => {
-      document.querySelector('.menu-bar').classList.toggle('active');
-    });
-  </script>
 </body>
 </html>
