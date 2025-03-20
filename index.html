@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+
+
+
+        <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -20,7 +23,7 @@
   <header>
     <h1>𝐎𝐍𝐄𝐌𝐈𝐌𝐔𝐓𝐄𝐖𝐈𝐍𝐒</h1>
     <p>Quick reads on trending topics—in 60 seconds!</p>
-    <nav class="main-nav">
+    <nav>
       <a href="index.html">Home</a>
       <a href="posts.html">Blog</a>
       <a href="premium.html">Premium</a>
@@ -28,26 +31,10 @@
       <a href="about.html">About</a>
       <a href="on-demand.html">On Demand</a>
     </nav>
-    <div class="menu-icon">☰</div>
-    <div class="menu-bar">
-      <a href="index.html">Home</a>
-      <a href="posts.html">Blog</a>
-      <a href="premium.html">Premium</a>
-      <a href="categories.html">Categories</a>
-      <a href="about.html">About</a>
-      <a href="on-demand.html">On Demand</a>
-    </div>
   </header>
   <main>
     <section class="blog-preview">
       <h2>Latest Posts</h2>
-      <article>
-        <img src="images/x-44b-valuation.jpg" alt="Elon Musk’s X Valuation">
-        <div class="article-overlay">
-          <h3><a href="posts/x-44b-valuation.html">Elon Musk’s X Bounces Back to $44B Valuation</a></h3>
-          <a href="posts/x-44b-valuation.html" class="read-more-btn">Read More</a>
-        </div>
-      </article>
       <article>
         <img src="images/crew-9-splashdown.jpg" alt="Crew-9 Splashdown">
         <div class="article-overlay">
@@ -144,10 +131,5 @@
     <p>© 2025 One-Minute Wins. All rights reserved.</p>
   </footer>
   <script>onload=()=>{setTimeout(()=>{document.querySelector('.asteroid-container').classList.add('fade-out')},6e3)}</script>
-  <script>
-    document.querySelector('.menu-icon').addEventListener('click', () => {
-      document.querySelector('.menu-bar').classList.toggle('active');
-    });
-  </script>
 </body>
 </html>
