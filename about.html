@@ -20,7 +20,7 @@
   <header>
     <h1>𝐎𝐍𝐄𝐌𝐈𝐌𝐔𝐓𝐄𝐖𝐈𝐍𝐒</h1>
     <p>Quick reads on trending topics—in 60 seconds!</p>
-    <nav>
+    <nav class="main-nav">
       <a href="index.html">Home</a>
       <a href="posts.html">Blog</a>
       <a href="premium.html">Premium</a>
@@ -28,22 +28,39 @@
       <a href="about.html">About</a>
       <a href="on-demand.html">On Demand</a>
     </nav>
+    <div class="menu-icon">☰</div>
+    <div class="menu-bar">
+      <a href="index.html">Home</a>
+      <a href="posts.html">Blog</a>
+      <a href="premium.html">Premium</a>
+      <a href="categories.html">Categories</a>
+      <a href="about.html">About</a>
+      <a href="on-demand.html">On Demand</a>
+    </div>
   </header>
   <main>
-    <section class="blog-preview">
+    <section class="about">
       <h2>About Us</h2>
-      <article class="full-post">
-        <div class="post-content">
-          <p>Welcome to <strong>One-Minute Wins</strong>, your go-to source for quick, engaging reads on the latest trends in tech, space, sports, and more! Our mission is to deliver bite-sized, informative content that fits into your busy life—all in under 60 seconds.</p>
-          <p>Founded by <span style="font-size: 1.5em; color: #d4d4d8;">Sathvik</span><span class="verified-badge"></span>, a passionate content creator with a love for innovation and storytelling, One-Minute Wins aims to make complex topics accessible and exciting. With a team of dedicated writers and researchers, we scour the web to bring you the most up-to-date and fascinating stories.</p>
-          <p>Whether you’re a tech enthusiast, a space explorer at heart, or a sports fan, we’ve got something for everyone. Stay tuned for more updates, and feel free to reach out with your feedback or ideas!</p>
+      <div class="about-content">
+        <div class="about-header">
+          <h3>Founded by Sathvik <span class="verified-tick">✔</span></h3>
+          <p class="tagline">Delivering the Future, One Minute at a Time</p>
         </div>
-      </article>
+        <div class="about-card">
+          <p>One-Minute Wins is your go-to platform for quick, engaging reads on trending topics. I’m Sathvik, a passionate content creator with a love for innovation and storytelling. My mission? To bring you bite-sized insights on tech, space, sports, and entertainment—crafted to spark curiosity in just 60 seconds.</p>
+          <p>Join me on this journey as we explore the future together, one minute at a time!</p>
+        </div>
+      </div>
     </section>
   </main>
   <footer>
     <p>© 2025 One-Minute Wins. All rights reserved.</p>
   </footer>
   <script>onload=()=>{setTimeout(()=>{document.querySelector('.asteroid-container').classList.add('fade-out')},6e3)}</script>
+  <script>
+    document.querySelector('.menu-icon').addEventListener('click', () => {
+      document.querySelector('.menu-bar').classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
