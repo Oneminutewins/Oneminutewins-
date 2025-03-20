@@ -20,7 +20,7 @@
   <header>
     <h1>𝐎𝐍𝐄𝐌𝐈𝐌𝐔𝐓𝐄𝐖𝐈𝐍𝐒</h1>
     <p>Quick reads on trending topics—in 60 seconds!</p>
-    <nav>
+    <nav class="main-nav">
       <a href="index.html">Home</a>
       <a href="posts.html">Blog</a>
       <a href="premium.html">Premium</a>
@@ -28,26 +28,60 @@
       <a href="about.html">About</a>
       <a href="on-demand.html">On Demand</a>
     </nav>
+    <div class="menu-icon">☰</div>
+    <div class="menu-bar">
+      <a href="index.html">Home</a>
+      <a href="posts.html">Blog</a>
+      <a href="premium.html">Premium</a>
+      <a href="categories.html">Categories</a>
+      <a href="about.html">About</a>
+      <a href="on-demand.html">On Demand</a>
+    </div>
   </header>
   <main>
-    <section class="blog-preview">
+    <section class="categories">
       <h2>Categories</h2>
-      <article class="full-post">
-        <div class="post-content">
-          <p>Explore our categories:</p>
-          <ul>
-            <li><a href="posts.html#tech">Tech</a></li>
-            <li><a href="posts.html#space">Space</a></li>
-            <li><a href="posts.html#sports">Sports</a></li>
-            <li><a href="posts.html#entertainment">Entertainment</a></li>
-          </ul>
-        </div>
-      </article>
+      <div class="category">
+        <h3>Tech</h3>
+        <ul>
+          <li><a href="posts/x-44b-valuation.html">Elon Musk’s X Bounces Back to $44B Valuation</a></li>
+          <li><a href="posts/advanced-ais.html">Most Advanced AIs Right Now</a></li>
+          <li><a href="posts/ai-gps-alternative.html">AI GPS Alternative Navigates without Signal</a></li>
+          <li><a href="posts/neuralink-trademarks.html">Neuralink Files ‘Telepathy’ and ‘Telekinesis’ Trademarks</a></li>
+        </ul>
+      </div>
+      <div class="category">
+        <h3>Space</h3>
+        <ul>
+          <li><a href="posts/crew-9-return.html">Crew-9 Returns to Earth After 286 Days in Space!</a></li>
+          <li><a href="posts/most-advanced-space-tech.html">Most Advanced Space Tech Right Now</a></li>
+          <li><a href="posts/mars-habitable.html">Is Mars Really Habitable?</a></li>
+        </ul>
+      </div>
+      <div class="category">
+        <h3>Sports</h3>
+        <ul>
+          <li><a href="posts/cristiano-ronaldo-career.html">Career of Cristiano Ronaldo</a></li>
+          <li><a href="posts/f1-matches-nearby.html">Is There Any F1 Matches Nearby?</a></li>
+        </ul>
+      </div>
+      <div class="category">
+        <h3>Entertainment</h3>
+        <ul>
+          <li><a href="posts/beru-vs-jinwoo.html">Beru vs. Jinwoo in Solo Leveling</a></li>
+          <li><a href="posts/lego-video-games.html">LEGO to Develop Video Games</a></li>
+        </ul>
+      </div>
     </section>
   </main>
   <footer>
     <p>© 2025 One-Minute Wins. All rights reserved.</p>
   </footer>
   <script>onload=()=>{setTimeout(()=>{document.querySelector('.asteroid-container').classList.add('fade-out')},6e3)}</script>
+  <script>
+    document.querySelector('.menu-icon').addEventListener('click', () => {
+      document.querySelector('.menu-bar').classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
