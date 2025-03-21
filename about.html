@@ -1,72 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>About - One-Minute Wins</title>
- <link rel="stylesheet" href="style.css">
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - One-Minute Wins</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
- <div class="asteroid-container">
- <div class="asteroid"></div>
- <div class="asteroid"></div>
- <div class="asteroid"></div>
- <div class="asteroid"></div>
- <div class="asteroid"></div>
- </div>
+  <div class="asteroid-container">
+    <div class="asteroid"></div>
+    <div class="asteroid"></div>
+    <div class="asteroid"></div>
+    <div class="asteroid"></div>
+    <div class="asteroid"></div>
+  </div>
 
- <!-- Hamburger Menu -->
- <div class="menu-container">
- <div class="menu-toggle">
- <span></span>
- <span></span>
- <span></span>
- </div>
- <nav class="menu">
- <a href="index.html">Home</a>
- <a href="premium.html">Premium</a>
- <a href="categories.html">Categories</a>
- <a href="about.html">About</a>
- <a href="on-demand.html">On Demand</a>
- </nav>
- </div>
+  <!-- Hamburger Menu -->
+  <div class="menu-container">
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="premium.html">Premium</a>
+      <a href="elite.html">Elite Users</a>
+      <a href="categories.html">Categories</a>
+      <a href="about.html">About</a>
+      <a href="on-demand.html">On Demand</a>
+      <a href="privacy.html">Privacy & Policy</a>
+    </nav>
+  </div>
 
- <main>
- <section class="blog-preview">
- <h2>About Us</h2>
- <article class="full-post futuristic-section">
- <div class="particle"></div>
- <div class="particle"></div>
- <div class="particle"></div>
- <div class="particle"></div>
- <div class="futuristic-content">
- <p>Welcome to <strong>One-Minute Wins</strong>, your go-to source for quick, engaging reads on the latest trends in tech, space, sports, and more! Our mission is to deliver bite-sized, informative content that fits into your busy life—all in under 60 seconds.</p>
- <p>Founded by <strong>Sathvik</strong><span class="verified-badge"></span>, a passionate content creator with a love for innovation and storytelling, One-Minute Wins aims to make complex topics accessible and exciting. With a team of dedicated writers and researchers, we scour the web to bring you the most up-to-date and fascinating stories.</p>
- <p>Whether you’re a tech enthusiast, a space explorer at heart, or a sports fan, we’ve got something for everyone. Stay tuned for more updates, and feel free to reach out with your feedback or ideas!</p>
- </div>
- </article>
- </section>
- </main>
+  <main>
+    <section class="about-section">
+      <h2>Hello, I’m Sathvik</h2>
+      <p class="intro">Founder of One-Minute Wins, a passionate content creator with a love for innovation and storytelling.</p>
+      <div class="skills">
+        <div class="skill-card"><span>Prompt Specialist</span></div>
+        <div class="skill-card"><span>AI Website Developer</span></div>
+      </div>
+      <div class="description">
+        <p>Welcome to <strong>One-Minute Wins</strong>, your go-to source for quick, engaging reads on the latest trends in tech, space, sports, and more! Our mission is to deliver bite-sized, informative content that fits into your busy life—all in under 60 seconds.</p>
+        <p>Founded by <strong>Sathvik</strong><span class="verified-badge"></span>, One-Minute Wins aims to make complex topics accessible and exciting. With a team of dedicated writers and researchers, we scour the web to bring you the most up-to-date and fascinating stories.</p>
+        <p>Whether you’re a tech enthusiast, a space explorer at heart, or a sports fan, we’ve got something for everyone. Stay tuned for more updates, and feel free to reach out with your feedback or ideas!</p>
+      </div>
+    </section>
+  </main>
 
- <footer>
- <p>© 2025 One-Minute Wins. All rights reserved.</p>
- </footer>
+  <footer>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank">f</a>
+      <a href="https://linkedin.com" target="_blank">in</a>
+      <a href="https://instagram.com" target="_blank">📷</a>
+      <a href="https://x.com" target="_blank">X</a>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="premium.html">Premium</a>
+      <a href="elite.html">Elite Users</a>
+      <a href="categories.html">Categories</a>
+      <a href="about.html">About</a>
+      <a href="on-demand.html">On Demand</a>
+      <a href="privacy.html">Privacy & Policy</a>
+    </div>
+    <p>© 2025 One-Minute Wins. All rights reserved.</p>
+  </footer>
 
- <script>
- // Asteroid animation
- onload = () => {
- setTimeout(() => {
- document.querySelector('.asteroid-container').classList.add('fade-out');
- }, 6e3);
- };
+  <script>
+    // Asteroid animation
+    onload = () => {
+      setTimeout(() => {
+        document.querySelector('.asteroid-container').classList.add('fade-out');
+      }, 6e3);
+    };
 
- // Hamburger menu toggle
- document.querySelector('.menu-toggle').addEventListener('click', () => {
- document.querySelector('.menu').classList.toggle('active');
- });
- </script>
+    // Hamburger menu toggle
+    document.querySelector('.menu-toggle').addEventListener('click', () => {
+      document.querySelector('.menu').classList.toggle('active');
+    });
+  </script>
 </body>
-</html>
+       </html>
