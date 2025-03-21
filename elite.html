@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elite Users - One-Minute Wins</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="asteroid-container">
+    <div class="asteroid"></div>
+    <div class="asteroid"></div>
+    <div class="asteroid"></div>
+    <div class="asteroid"></div>
+    <div class="asteroid"></div>
+  </div>
+
+  <!-- Hamburger Menu -->
+  <div class="menu-container">
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="premium.html">Premium</a>
+      <a href="elite.html">Elite Users</a>
+      <a href="categories.html">Categories</a>
+      <a href="about.html">About</a>
+      <a href="on-demand.html">On Demand</a>
+      <a href="privacy.html">Privacy & Policy</a>
+    </nav>
+  </div>
+
+  <main>
+    <section class="elite-section">
+      <h2>Elite Users Only</h2>
+      <p>Unlock exclusive premium content with our Elite plan. Get access to monthly Q&A sessions, custom content requests, and more!</p>
+      <a href="premium.html" class="cta-btn">Upgrade to Elite Now</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank">f</a>
+      <a href="https://linkedin.com" target="_blank">in</a>
+      <a href="https://instagram.com" target="_blank">📷</a>
+      <a href="https://x.com" target="_blank">X</a>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="premium.html">Premium</a>
+      <a href="elite.html">Elite Users</a>
+      <a href="categories.html">Categories</a>
+      <a href="about.html">About</a>
+      <a href="on-demand.html">On Demand</a>
+      <a href="privacy.html">Privacy & Policy</a>
+    </div>
+    <p>© 2025 One-Minute Wins. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Asteroid animation
+    onload = () => {
+      setTimeout(() => {
+        document.querySelector('.asteroid-container').classList.add('fade-out');
+      }, 6e3);
+    };
+
+    // Hamburger menu toggle
+    document.querySelector('.menu-toggle').addEventListener('click', () => {
+      document.querySelector('.menu').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
