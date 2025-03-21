@@ -1,72 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Categories - One-Minute Wins</title>
- <link rel="stylesheet" href="style.css">
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories - One-Minute Wins</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
- <div class="asteroid-container">
- <div class="asteroid"></div>
- <div class="asteroid"></div>
- <div class="asteroid"></div>
- <div class="asteroid"></div>
- <div class="asteroid"></div>
- </div>
+  <div class="asteroid-container">
+    <div class="asteroid"></div>
+    <div class="asteroid"></div>
+    <div class="asteroid"></div>
+    <div class="asteroid"></div>
+    <div class="asteroid"></div>
+  </div>
 
- <!-- Hamburger Menu -->
- <div class="menu-container">
- <div class="menu-toggle">
- <span></span>
- <span></span>
- <span></span>
- </div>
- <nav class="menu">
- <a href="index.html">Home</a>
- <a href="premium.html">Premium</a>
- <a href="categories.html">Categories</a>
- <a href="about.html">About</a>
- <a href="on-demand.html">On Demand</a>
- </nav>
- </div>
+  <!-- Hamburger Menu -->
+  <div class="menu-container">
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="premium.html">Premium</a>
+      <a href="elite.html">Elite Users</a>
+      <a href="categories.html">Categories</a>
+      <a href="about.html">About</a>
+      <a href="on-demand.html">On Demand</a>
+      <a href="privacy.html">Privacy & Policy</a>
+    </nav>
+  </div>
 
- <main>
- <section class="blog-preview">
- <h2>Categories</h2>
- <article class="full-post">
- <div class="post-content">
- <p>Explore our categories:</p>
- <ul>
- <li><a href="index.html#tech">Tech</a></li>
- <li><a href="index.html#space">Space</a></li>
- <li><a href="index.html#sports">Sports</a></li>
- <li><a href="index.html#entertainment">Entertainment</a></li>
- </ul>
- </div>
- </article>
- </section>
- </main>
+  <main>
+    <section class="blog-preview">
+      <h2>Categories</h2>
+      <article class="full-post">
+        <div class="post-content">
+          <p>Explore our categories:</p>
+          <ul>
+            <li><a href="index.html#tech">Tech</a></li>
+            <li><a href="index.html#space">Space</a></li>
+            <li><a href="index.html#sports">Sports</a></li>
+            <li><a href="index.html#entertainment">Entertainment</a></li>
+          </ul>
+        </div>
+      </article>
+    </section>
+  </main>
 
- <footer>
- <p>© 2025 One-Minute Wins. All rights reserved.</p>
- </footer>
+  <footer>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank">f</a>
+      <a href="https://linkedin.com" target="_blank">in</a>
+      <a href="https://instagram.com" target="_blank">📷</a>
+      <a href="https://x.com" target="_blank">X</a>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="premium.html">Premium</a>
+      <a href="elite.html">Elite Users</a>
+      <a href="categories.html">Categories</a>
+      <a href="about.html">About</a>
+      <a href="on-demand.html">On Demand</a>
+      <a href="privacy.html">Privacy & Policy</a>
+    </div>
+    <p>© 2025 One-Minute Wins. All rights reserved.</p>
+  </footer>
 
- <script>
- // Asteroid animation
- onload = () => {
- setTimeout(() => {
- document.querySelector('.asteroid-container').classList.add('fade-out');
- }, 6e3);
- };
+  <script>
+    // Asteroid animation
+    onload = () => {
+      setTimeout(() => {
+        document.querySelector('.asteroid-container').classList.add('fade-out');
+      }, 6e3);
+    };
 
- // Hamburger menu toggle
- document.querySelector('.menu-toggle').addEventListener('click', () => {
- document.querySelector('.menu').classList.toggle('active');
- });
- </script>
+    // Hamburger menu toggle
+    document.querySelector('.menu-toggle').addEventListener('click', () => {
+      document.querySelector('.menu').classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
